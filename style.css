@@ -300,3 +300,30 @@ footer {
   color: #cbd5e1;
   font-weight: bold;
 }
+
+/* Down Arrow Button (Less Glow) */
+.down-arrow {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid rgba(168,85,247,0.4);
+  display: flex;
+  justify-content: center;
+  algin-items: center;
+  margin: 30px auto;
+  color: #a855f7;
+  font-size: 22px;
+
+  /* Reduced Glow */
+  box-shadow: 0px 0px 8px rgba(168,85,247,o.25);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.down-arrow:hover {
+  box-shadow: 0px 0px 12px rgba(168,85,247,0.40;
+  transform: scale(1.08);
+}

@@ -327,3 +327,112 @@ footer {
   box-shadow: 0px 0px 12px rgba(168,85,247,0.40;
   transform: scale(1.08);
 }
+
+/* ================================
+   PREMIUM UI DESIGN (NEW UPDATE)
+================================ */
+
+/* Background */
+body {
+  background: radial-gradient(circle at top, #2b1055, #050612, #000);
+  color: white;
+}
+
+/* Navbar glass effect */
+nav {
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.12);
+}
+
+/* Hero Orbit Circle */
+.orbit-circle {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px dashed rgba(168, 85, 247, 0.5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotateOrbit 12s linear infinite;
+}
+
+.center-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: #a855f7;
+  backdrop-filter: blur(12px);
+}
+
+.orbit-item {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #a855f7;
+  position: absolute;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
+}
+
+/* Orbit Positions */
+.orbit1 { top: -20px; left: 40%; }
+.orbit2 { top: 20%; right: -20px; }
+.orbit3 { bottom: -20px; left: 40%; }
+.orbit4 { top: 20%; left: -20px; }
+.orbit5 { top: 65%; right: 10%; }
+.orbit6 { top: 65%; left: 10%; }
+
+@keyframes rotateOrbit {
+  100% { transform: rotate(360deg); }
+}
+
+/* Skills Grid Premium Cards */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 18px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 18px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(14px);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(168, 85, 247, 0.8);
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.25);
+}
+
+.skill-card i {
+  font-size: 32px;
+  color: #a855f7;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #cbd5e1;
+  font-weight: bold;
+}

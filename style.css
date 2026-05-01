@@ -9,13 +9,13 @@ body {
 /* Glow Effect */
 .glow {
   position: absolute;
-  top: -200px;
+  top: -250px;
   left: 50%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.8), transparent);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.5), transparent 70%);
   transform: translateX(-50%);
-  filter: blur(90px);
+  filter: blur(120px);
   z-index: -1;
 }
 

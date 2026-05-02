@@ -387,3 +387,49 @@ footer {
     gap: 15px;
   }
 }
+
+/* ============================
+   ICON COLOR GLOW EFFECT
+============================ */
+
+/* Default smooth hover */
+.skill-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow Effect */
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* Individual glow colors */
+.skill-card i.python { text-shadow: 0 0 18px #facc15; }
+.skill-card i.flutter { text-shadow: 0 0 18px #38bdf8; }
+.skill-card i.js { text-shadow: 0 0 18px #fbbf24; }
+.skill-card i.firebase { text-shadow: 0 0 18px #fb923c; }
+.skill-card i.html { text-shadow: 0 0 18px #f97316; }
+.skill-card i.css { text-shadow: 0 0 18px #3b82f6; }
+.skill-card i.github { text-shadow: 0 0 18px white; }
+.skill-card i.mongodb { text-shadow: 0 0 18px #22c55e; }
+.skill-card i.mysql { text-shadow: 0 0 18px #60a5fa; }
+.skill-card i.figma { text-shadow: 0 0 18px #a855f7; }
+.skill-card i.canva { text-shadow: 0 0 18px #06b6d4; }
+.skill-card i.arduino { text-shadow: 0 0 18px #22d3ee; }
+.skill-card i.dart { text-shadow: 0 0 18px #60a5fa; }
+.skill-card i.c { text-shadow: 0 0 18px #3b82f6; }
+.skill-card i.cpp { text-shadow: 0 0 18px #2563eb; }
+
+/* Card glow border on hover */
+.skill-card:hover {
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.25);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Orbit Icons Glow */
+.orbit-item i.python { text-shadow: 0 0 18px #facc15; }
+.orbit-item i.flutter { text-shadow: 0 0 18px #38bdf8; }
+.orbit-item i.js { text-shadow: 0 0 18px #fbbf24; }
+.orbit-item i.firebase { text-shadow: 0 0 18px #fb923c; }
+.orbit-item i.db { text-shadow: 0 0 18px #cbd5e1; }
+.orbit-item i.code { text-shadow: 0 0 18px #a855f7; }

@@ -130,6 +130,8 @@ body {
   font-weight: bold;
   font-size: 14px;
   transition: 0.3s;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -153,7 +155,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Social Links */
+/* Social Buttons */
 .social-links {
   display: flex;
   gap: 15px;
@@ -169,6 +171,9 @@ body {
   color: white;
   text-decoration: none;
   font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   transition: 0.3s;
 }
 
@@ -226,7 +231,6 @@ body {
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
 }
 
-/* Orbit Positions */
 .orbit1 { top: -20px; left: 40%; }
 .orbit2 { top: 20%; right: -20px; }
 .orbit3 { bottom: -20px; left: 40%; }
@@ -238,7 +242,7 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-/* Down Arrow Button (Less Glow) */
+/* Down Arrow */
 .down-arrow {
   width: 55px;
   height: 55px;
@@ -262,7 +266,7 @@ body {
   transform: scale(1.08);
 }
 
-/* Section */
+/* Sections */
 .section {
   padding: 60px 60px;
 }

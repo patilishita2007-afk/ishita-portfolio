@@ -1,4 +1,3 @@
-// Typing Animation
 const words = [
   "Flutter Developer",
   "Web Developer",

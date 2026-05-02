@@ -225,7 +225,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  color: #a855f7;
+  color: white;
   position: absolute;
   backdrop-filter: blur(12px);
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.15);
@@ -304,7 +304,7 @@ body {
 
 .skill-card i {
   font-size: 32px;
-  color: #a855f7;
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -387,6 +387,25 @@ footer {
     gap: 15px;
   }
 }
+
+/* Icon Brand Colors (Exact Look Like Reference) */
+.python { color: #facc15; }     /* Yellow */
+.flutter { color: #38bdf8; }    /* Sky Blue */
+.js { color: #fbbf24; }         /* Yellow */
+.firebase { color: #fb923c; }   /* Orange */
+.html { color: #f97316; }       /* Orange */
+.css { color: #3b82f6; }        /* Blue */
+.github { color: white; }       /* White */
+.mongodb { color: #22c55e; }    /* Green */
+.mysql { color: #60a5fa; }      /* Light Blue */
+.figma { color: #a855f7; }      /* Purple */
+.canva { color: #06b6d4; }      /* Cyan */
+.arduino { color: #22d3ee; }    /* Aqua */
+.dart { color: #60a5fa; }       /* Blue */
+.c { color: #3b82f6; }          /* Blue */
+.cpp { color: #2563eb; }        /* Dark Blue */
+.db { color: #cbd5e1; }         /* Gray */
+.code { color: #a855f7; }       /* Purple */
 
 /* ============================
    ICON COLOR GLOW EFFECT

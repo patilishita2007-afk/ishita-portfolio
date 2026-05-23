@@ -1,174 +1,595 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ishita Yogesh Patil | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link rel="stylesheet" href="style.css" />
+  <title>Ishita Patil | portfolio</title>
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta
+    name="description"
+    content="Futuristic animated portfolio of Ishita Patil."
+  />
+
+  <meta name="theme-color" content="#050507"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <!-- ADD THIS INSIDE <head> -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+/>
+
+  <!-- GSAP -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis -->
+  <script defer src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
+  <!-- SplitType -->
+  <script defer src="https://unpkg.com/split-type"></script>
+
+  <!-- Lucide -->
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+
 </head>
 
 <body>
 
-  <!-- Glow Background -->
-  <div class="glow"></div>
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <h2 class="logo">Ishita Patil<span>.</span></h2>
+  <!-- PARTICLE BACKGROUND -->
+  <canvas id="particle-canvas"></canvas>
 
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#events">Events</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- NAVBAR -->
+  <header class="navbar">
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
+    <div class="logo">Ishita Patil</div>
 
-    <div class="hero-left">
-      <h1>Providing the best <br><span>project experience.</span></h1>
+    <nav>
+      <a href="#about" class="magnetic">About</a>
+      <a href="#skills" class="magnetic">Skills</a>
+      <a href="#projects" class="magnetic">Projects</a>
+      <a href="#timeline" class="magnetic">Timeline</a>
+      <a href="#contact" class="magnetic">Contact</a>
 
-      <p class="intro">
-        I am <b>Ishita Yogesh Patil</b>, a Computer Engineering student passionate about
-        Web Development, Flutter, and building impactful projects through innovation.
+      <a
+        href="assets/resume.pdf"
+        target="_blank"
+        class="magnetic"
+      >
+        Resume
+</a>
+    </nav>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <div class="hero-content">
+
+      <p class="eyebrow reveal">
+        FUTURISTIC DEVELOPER • DESIGNER • CREATOR
       </p>
 
-      <p class="tagline">🚀 <span id="typing"></span></p>
+      <h1 class="hero-title">
+        ISHITA<br/>
+        PATIL
+      </h1>
 
-      <div class="btns">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="resume.pdf" target="_blank" class="btn btn-outline">View Resume</a>
-        <a href="resume.pdf" download class="btn btn-outline">Download Resume</a>
-      </div>
+      <p class="hero-description reveal">
+        A Computer Engineerning Student and Passionate developer focused on building immersive web
+        experiences, modern mobile applications, and futuristic
+        digital interfaces with elegant interaction systems.
+      </p>
 
-      <div class="social-links">
-        <a href="https://www.linkedin.com/" target="_blank" class="social-btn">
-          <i class="fa-brands fa-linkedin"></i> LinkedIn
+      <div class="hero-buttons reveal">
+
+        <a href="#projects">
+          <button class="primary-btn magnetic">
+            Explore Work
+          </button>
         </a>
 
-        <a href="https://github.com/Patilishita2007-afk" target="_blank" class="social-btn">
-          <i class="fa-brands fa-github"></i> GitHub
+        <a href="#contact">
+          <button class="secondary-btn magnetic">
+            Contact Me
+          </button>
+          <a
+           href="assets/resume.pdf"
+          target="_blank"
+          download
+        >
+          <button class="secondary-btn magnetic">
+            Download Resume
+  </button>
+</a>
         </a>
-      </div>
-    </div>
-
-    <!-- Orbit Circle -->
-    <div class="hero-right">
-      <div class="orbit-circle">
-
-        <div class="center-box">
-          <i class="fa-solid fa-desktop"></i>
-        </div>
-
-        <div class="orbit-item orbit1"><i class="fa-brands fa-python"></i></div>
-        <div class="orbit-item orbit2"><i class="fa-brands fa-flutter"></i></div>
-        <div class="orbit-item orbit3"><i class="fa-brands fa-js"></i></div>
-        <div class="orbit-item orbit4"><i class="fa-solid fa-database"></i></div>
-        <div class="orbit-item orbit5"><i class="fa-solid fa-code"></i></div>
-        <div class="orbit-item orbit6"><i class="fa-solid fa-fire"></i></div>
 
       </div>
+
     </div>
 
   </section>
 
-  <!-- Down Arrow -->
-  <a href="#skills" class="down-arrow">↓</a>
+  <!-- ABOUT -->
+  <section class="about section" id="about">
 
-  <!-- Skills Section -->
-  <section class="section" id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill-card"><i class="fa-solid fa-c c"></i><p>C</p></div>
-      <div class="skill-card"><i class="fa-solid fa-code cpp"></i><p>C++</p></div>
-      <div class="skill-card"><i class="fa-brands fa-python python"></i><p>Python</p></div>
-      <div class="skill-card"><i class="fa-solid fa-mobile-screen dart"></i><p>Dart</p></div>
-
-      <div class="skill-card"><i class="fa-brands fa-html5 html"></i><p>HTML</p></div>
-      <div class="skill-card"><i class="fa-brands fa-css3-alt css"></i><p>CSS</p></div>
-      <div class="skill-card"><i class="fa-brands fa-js js"></i><p>JavaScript</p></div>
-      <div class="skill-card"><i class="fa-brands fa-android flutter"></i><p>Flutter</p></div>
-
-      <div class="skill-card"><i class="fa-solid fa-fire firebase"></i><p>Firebase</p></div>
-      <div class="skill-card"><i class="fa-solid fa-database mysql"></i><p>MySQL</p></div>
-      <div class="skill-card"><i class="fa-solid fa-leaf mongodb"></i><p>MongoDB</p></div>
-
-      <div class="skill-card"><i class="fa-brands fa-github github"></i><p>GitHub</p></div>
-      <div class="skill-card"><i class="fa-brands fa-figma figma"></i><p>Figma</p></div>
-      <div class="skill-card"><i class="fa-solid fa-palette canva"></i><p>Canva</p></div>
-      <div class="skill-card"><i class="fa-solid fa-microchip arduino"></i><p>Arduino</p></div>
+    <div class="section-heading">
+      <span>ABOUT</span>
+      <h2>Engineering immersive digital experiences.</h2>
     </div>
-  </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <h2>Projects</h2>
+    <div class="about-grid">
 
-    <div class="projects-grid">
+      <div class="glass-card tilt-card reveal">
 
-      <div class="project-card">
-        <h3>Resume Generator & Rating Website</h3>
+        <i data-lucide="sparkles"></i>
+
+        <h3>Creative Development</h3>
+
         <p>
-          Developed a resume generator and ATS-friendly rating platform for users to create and evaluate resumes.
+          Building visually immersive interfaces using
+          futuristic interaction systems and premium animations.
         </p>
+
       </div>
 
-      <div class="project-card">
-        <h3>Cyber Security Awareness Website</h3>
+      <div class="glass-card tilt-card reveal">
+
+        <i data-lucide="smartphone"></i>
+
+        <h3>App Development</h3>
+
         <p>
-          Created a cyber security awareness website aimed at spreading knowledge about digital safety and emerging threats.
+          Creating scalable cross-platform applications
+          using Flutter and Firebase technologies.
         </p>
-        <a href="https://patilishita2007-afk.github.io/cyber-crime-awareness/" target="_blank" class="btn btn-outline">
-          View Website
+
+      </div>
+
+      <div class="glass-card tilt-card reveal">
+
+        <i data-lucide="code-2"></i>
+
+        <h3>Frontend Engineering</h3>
+
+        <p>
+          Designing responsive modern experiences using
+          JavaScript, HTML, CSS, and advanced UI systems.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SKILLS -->
+
+<section class="section" id="skills">
+
+  <div class="section-heading">
+    <span>TECH STACK</span>
+    <h2>Technologies & Tools</h2>
+  </div>
+
+  <div class="skills-icons">
+
+    <!-- C -->
+    <div class="skill-item reveal">
+      <i class="devicon-c-plain colored"></i>
+      <span>C</span>
+    </div>
+
+    <!-- C++ -->
+    <div class="skill-item reveal">
+      <i class="devicon-cplusplus-plain colored"></i>
+      <span>C++</span>
+    </div>
+
+    <!-- Python -->
+    <div class="skill-item reveal">
+      <i class="devicon-python-plain colored"></i>
+      <span>Python</span>
+    </div>
+
+    <!-- HTML -->
+    <div class="skill-item reveal">
+      <i class="devicon-html5-plain colored"></i>
+      <span>HTML</span>
+    </div>
+
+    <!-- CSS -->
+    <div class="skill-item reveal">
+      <i class="devicon-css3-plain colored"></i>
+      <span>CSS</span>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="skill-item reveal">
+      <i class="devicon-javascript-plain colored"></i>
+      <span>JavaScript</span>
+    </div>
+
+    <!-- Dart -->
+    <div class="skill-item reveal">
+      <i class="devicon-dart-plain colored"></i>
+      <span>Dart</span>
+    </div>
+
+    <!-- Flutter -->
+    <div class="skill-item reveal">
+      <i class="devicon-flutter-plain colored"></i>
+      <span>Flutter</span>
+    </div>
+
+    <!-- Firebase -->
+    <div class="skill-item reveal">
+      <i class="devicon-firebase-plain colored"></i>
+      <span>Firebase</span>
+    </div>
+
+    <!-- MySQL -->
+    <div class="skill-item reveal">
+      <i class="devicon-mysql-plain colored"></i>
+      <span>MySQL</span>
+    </div>
+
+    <!-- MongoDB -->
+    <div class="skill-item reveal">
+      <i class="devicon-mongodb-plain colored"></i>
+      <span>MongoDB</span>
+    </div>
+
+    <!-- GitHub -->
+    <div class="skill-item reveal">
+      <i class="devicon-github-original"></i>
+      <span>GitHub</span>
+    </div>
+
+    <!-- Figma -->
+    <div class="skill-item reveal">
+      <i class="devicon-figma-plain colored"></i>
+      <span>Figma</span>
+    </div>
+
+    <!-- Canva -->
+    <div class="skill-item reveal">
+      <img
+        src="https://cdn.simpleicons.org/canva/00C4CC"
+        alt="Canva"
+        class="custom-icon"
+      />
+      <span>Canva</span>
+    </div>
+
+    <!-- Arduino -->
+    <div class="skill-item reveal">
+      <i class="devicon-arduino-plain colored"></i>
+      <span>Arduino</span>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- PROJECTS -->
+  <div class="projects-grid">
+
+  <!-- PROJECT 1 -->
+
+  <article class="project-card reveal">
+
+    <div class="project-image">
+      <img
+        src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1200&auto=format&fit=crop"
+        alt="Resume Generator Website"
+      >
+    </div>
+
+    <div class="project-content">
+
+      <span class="project-tag">
+        WEB APPLICATION
+      </span>
+
+      <h3>Resume Generator & Rating Website</h3>
+
+      <p>
+        Smart resume generation platform with integrated
+        resume analysis and rating system helping users
+        optimize professional profiles effectively.
+      </p>
+
+      <div style="margin-top:25px;">
+
+        <a href="#" target="_blank">
+
+          <button class="primary-btn magnetic">
+            Live Preview
+          </button>
+
         </a>
-      </div>
 
-      <div class="project-card">
-        <h3>SIH Farmer Chatbot (Smart India Hackathon)</h3>
-        <p>
-          Developed a chatbot for farmers to detect plant diseases, suggest solutions, and analyze soil pH with fertilizer guidance.
-        </p>
       </div>
 
     </div>
+
+  </article>
+
+  <!-- PROJECT 2 -->
+
+  <article class="project-card reveal">
+
+    <div class="project-image">
+      <img
+        src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1200&auto=format&fit=crop"
+        alt="Cyber Security Website"
+      >
+    </div>
+
+    <div class="project-content">
+
+      <span class="project-tag">
+        CYBER SECURITY
+      </span>
+
+      <h3>Cyber Security Awareness Website</h3>
+
+      <p>
+        Created a cyber security awareness website aimed
+        at spreading knowledge about digital safety,
+        cyber crimes, phishing attacks, and emerging
+        online threats through an interactive experience.
+      </p>
+
+      <div style="margin-top:25px;">
+
+        <a
+          href="https://patilishita2007-afk.github.io/cyber-crime-awareness/"
+          target="_blank"
+        >
+
+          <button class="primary-btn magnetic">
+            Live Preview
+          </button>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- PROJECT 3 -->
+
+  <article class="project-card reveal">
+
+    <div class="project-image">
+      <img
+        src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1200&auto=format&fit=crop"
+        alt="Farmer Chatbot"
+      >
+    </div>
+
+    <div class="project-content">
+
+      <span class="project-tag">
+        AI • AGRITECH
+      </span>
+
+      <h3>SIH Farmer Chatbot</h3>
+
+      <p>
+        Developed a chatbot for farmers to detect plant
+        diseases, suggest solutions, analyze soil pH,
+        and provide fertilizer guidance for improving
+        crop health and productivity.
+      </p>
+
+      <div style="margin-top:25px;">
+
+        <a href="#" target="_blank">
+
+          <button class="primary-btn magnetic">
+            View Project
+          </button>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </article>
+
+</div>
+ 
+   
+      
+  <!-- TIMELINE -->
+  <section class="timeline section" id="timeline">
+
+    <div class="section-heading">
+      <span>JOURNEY</span>
+      <h2>Experience Timeline</h2>
+    </div>
+
+    <div class="timeline-line"></div>
+
+    <div class="timeline-items">
+
+      <div class="timeline-item reveal">
+
+        <span>FIRST YEAR • DEC 2024</span>
+
+        <h3>Project Competition Participant</h3>
+
+        <p>
+          Participated in project competition presenting
+          innovative technical concepts and solutions.
+        </p>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <span>FIRST YEAR • MARCH 2025</span>
+
+        <h3>IOT Project Competition</h3>
+
+        <p>
+          Participated in IOT project competition focused
+          on smart connected systems and innovation.
+        </p>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <span>SECOND YEAR • 2025</span>
+
+        <h3>Hosting Events under ACM Student Chapter</h3>
+
+        <p>
+          Hosted and coordinated technical and student
+          engagement events under ACM Student Chapter.
+        </p>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <span>SECOND YEAR • SEP 2025</span>
+
+        <h3>Webathon Participant</h3>
+
+        <p>
+          Participated in Webathon solving modern
+          frontend and development challenges.
+        </p>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <span>FEB 2026</span>
+
+        <h3>Volunteer — Gold Event at DY Patil Mumbai</h3>
+
+        <p>
+          Volunteered during the Gold Event contributing
+          to coordination and event management activities.
+        </p>
+
+      </div>
+
+      <div class="timeline-item reveal">
+
+        <span>MARCH 2026</span>
+
+        <h3>IDE 6.0 Participant</h3>
+
+        <p>
+          Participated in IDE 6.0 innovation and
+          development challenge competition.
+        </p>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <!-- Events -->
-  <section class="section" id="events">
-    <h2>Events & Participation</h2>
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
 
-    <ul class="event-list">
-      <li>Participated in Webathon 2.0 (Unstop)</li>
-      <li>Hosting Events under ACM Student Chapter</li>
-      <li>Volunteering during Gold Event at DY Patil Mumbai</li>
-      <li>Participated in IDE 6.0</li>
-      <li>Participated in IoT Project Competition</li>
-      <li>Participated in Project Competition</li>
-      <li>Participated in Group Discussion (GD)</li>
-    </ul>
+    <div class="section-heading">
+      <span>CONTACT</span>
+      <h2>Let’s create something extraordinary.</h2>
+    </div>
+
+    <form class="contact-form reveal">
+
+      <div class="input-group">
+        <input type="text" required />
+        <label>Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" required />
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea required></textarea>
+        <label>Message</label>
+      </div>
+
+      <button class="primary-btn magnetic submit-btn">
+        Send Message
+      </button>
+
+    </form>
+
+    <!-- SOCIAL LINKS -->
+
+    <div
+      style="
+        margin-top:60px;
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+      "
+      class="reveal"
+    >
+
+      <a
+        href="mailto:ishitapatil323@gmail.com"
+        class="secondary-btn magnetic"
+      >
+        Email
+      </a>
+
+      <a
+        href="https://github.com/Patilishita2007-afk"
+        target="_blank"
+        class="secondary-btn magnetic"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/ishita-patil-931596363"
+        target="_blank"
+        class="secondary-btn magnetic"
+      >
+        LinkedIn
+      </a>
+
+    </div>
+
   </section>
-
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-
-    <p>Email: <a href="mailto:ishitapatil323@gmail.com">ishitapatil323@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Patilishita2007-afk" target="_blank">Patilishita2007-afk</a></p>
-  </section>
-
-  <footer>
-    <p>© 2026 Ishita Yogesh Patil | Portfolio</p>
-  </footer>
-
-  <script src="script.js"></script>
 
 </body>
 </html>
